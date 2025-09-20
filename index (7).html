@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>르빗 주식회사 | LEBIT Corp.</title>
+  <style>
+    /* ===== 스타일 (간단, 한 파일) ===== */
+    :root{
+      --bg:#ffffff; --text:#1f2937; --muted:#6b7280; --brand:#0f172a; --accent:#f1f5f9; --line:#e5e7eb;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Noto Sans KR,sans-serif; color:var(--text); background:var(--bg);}
+    a{color:var(--brand); text-decoration:none}
+    header{position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line);}
+    .wrap{max-width:1100px; margin:0 auto; padding:0 16px;}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700}
+    .logo{width:36px; height:36px; border-radius:10px; display:grid; place-items:center; color:#fff; background:var(--brand);}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:#fff; cursor:pointer}
+    .btn.primary{background:var(--brand); color:#fff; border-color:var(--brand);}
+    .hero{padding:56px 0;}
+    h1{font-size:28px; margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .grid{display:grid; gap:16px}
+    @media(min-width:900px){
+      .hero-grid{grid-template-columns:1.2fr .8fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .grid-4{grid-template-columns:repeat(4,1fr)}
+    }
+    section{padding:36px 0; border-top:1px solid var(--line)}
+    h2{font-size:22px; margin:0 0 12px}
+    .card{border:1px solid var(--line); border-radius:14px; background:#fff}
+    .card .pad{padding:16px}
+    .footer{padding:24px 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px}
+    .badge{display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:#fff; margin-right:6px; margin-bottom:6px; font-size:13px}
+    .contact-grid{display:grid; gap:16px}
+    @media(min-width:800px){ .contact-grid{grid-template-columns:2fr 1fr} }
+    input, textarea{width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:10px; font:inherit}
+    textarea{min-height:120px; resize:vertical}
+    .note{background:var(--accent); padding:10px 12px; border-radius:10px; color:#0f172a; font-size:14px}
+    .small{font-size:12px}
+    .pill{display:inline-block; padding:4px 8px; background:#eef2ff; border:1px solid #e5e7eb; border-radius:999px; font-size:12px; margin-right:6px}
+  </style>
+</head>
+<body>
+  <!-- ===== 상단 네비게이션 ===== -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">L</div>
+        <div>르빗 주식회사 (LEBIT Corp.)</div>
+      </div>
+      <div class="muted small">☎ +82-10-4230-3532 · ✉ 6605suk@naver.com</div>
+    </div>
+  </header>
+
+  <!-- ===== 히어로 영역 ===== -->
+  <div class="wrap hero">
+    <div class="grid hero-grid">
+      <div>
+        <h1>글로벌 금융 · 무역 · 라이프스타일</h1>
+        <p class="muted">르빗(LEBIT)은 국제 무역금융 솔루션과 원자재 트레이딩을 수행하며, 카페·디저트 등 라이프스타일 사업을 전개합니다.</p>
+        <div style="margin-top:12px;">
+          <span class="badge">국제 금융 절차</span>
+          <span class="badge">글로벌 무역 네트워크</span>
+          <span class="badge">브랜드 운영</span>
+        </div>
+        <div style="margin-top:16px;">
+          <a class="btn primary" href="#contact">문의하기</a>
+          <a class="btn" href="#services">사업영역 보기</a>
+        </div>
+        <p class="note" style="margin-top:12px;">
+          ✍ 텍스트를 바꾸려면 이 파일(<b>index.html</b>)을 메모장으로 열어 글자만 바꾸고 저장하세요.
+        </p>
+      </div>
+      <div class="card">
+        <div class="pad">
+          <b>빠른 정보</b><br>
+          본사: 경기도 시흥시 매화로 97, 4층 401호 (제일빌딩)<br>
+          지사: 경기도 광주시 퇴촌면 정영로 956<br>
+          <span class="small muted">* 주소/전화/이메일은 파일에서 바로 수정 가능합니다.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 사업 영역 ===== -->
+  <section id="services">
+    <div class="wrap">
+      <h2>사업 영역</h2>
+      <div class="grid grid-4">
+        <div class="card"><div class="pad"><b>원자재 무역</b><br><span class="muted small">구리 캐소드, 스크랩 등 장기·안정 공급</span></div></div>
+        <div class="card"><div class="pad"><b>무역금융</b><br><span class="muted small">LC/DLC, SBLC 등 금융 도구 지원</span></div></div>
+        <div class="card"><div class="pad"><b>브랜드 운영</b><br><span class="muted small">카페/디저트 기반 라이프스타일 전개</span></div></div>
+        <div class="card"><div class="pad"><b>수입 유통</b><br><span class="muted small">Sal De Riso 디저트 수입·유통</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sal De Riso 대표 제품 (이미지 경로만 바꾸면 됨) ===== -->
+  <section id="products">
+    <div class="wrap">
+      <h2>Sal De Riso 대표 제품</h2>
+      <div class="grid grid-4">
+        <div class="card"><div class="pad">
+          <div class="pill">케이크</div>
+          <b>티라미수 클래식</b><br>
+          <span class="muted small">정통 이탈리아식 레시피</span><br>
+          <!-- 이미지를 넣고 싶으면 아래 src에 파일 경로를 적으세요. /images/tiramisu.jpg 등의 경로 -->
+          <img src="" alt="" style="width:100%; border-radius:10px; margin-top:8px">
+        </div></div>
+        <div class="card"><div class="pad">
+          <div class="pill">케이크</div>
+          <b>델리치아 알 리모네</b><br>
+          <span class="muted small">시그니처 레몬 케이크</span>
+          <img src="" alt="" style="width:100%; border-radius:10px; margin-top:8px">
+        </div></div>
+        <div class="card"><div class="pad">
+          <div class="pill">치즈</div>
+          <b>치즈케이크</b><br>
+          <span class="muted small">부드러운 이탈리안 치즈</span>
+          <img src="" alt="" style="width:100%; border-radius:10px; margin-top:8px">
+        </div></div>
+        <div class="card"><div class="pad">
+          <div class="pill">초콜릿</div>
+          <b>초콜릿 무스</b><br>
+          <span class="muted small">진한 카카오 풍미</span>
+          <img src="" alt="" style="width:100%; border-radius:10px; margin-top:8px">
+        </div></div>
+      </div>
+      <p class="small muted" style="margin-top:8px">※ 제품 사진을 넣으시려면 <b>/images</b> 폴더를 만들고 JPG/PNG 파일을 올린 뒤, 위의 <code>src=""</code> 자리에 경로를 입력하세요. (예: <code>src="images/tiramisu.jpg"</code>)</p>
+    </div>
+  </section>
+
+  <!-- ===== 문서 섹션 ===== -->
+  <section id="docs">
+    <div class="wrap">
+      <h2>주요 문서</h2>
+      <div class="grid grid-3">
+        <div class="card"><div class="pad"><b>회사소개서</b><br><span class="muted small">르빗 기업 개요 및 주요 실적</span></div></div>
+        <div class="card"><div class="pad"><b>무역 서류</b><br><span class="muted small">FCO, CIS, RWA, LC/SBLC</span></div></div>
+        <div class="card"><div class="pad"><b>브랜드 자료</b><br><span class="muted small">Sal De Riso 소개 자료</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 연락처 ===== -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>연락처</h2>
+      <div class="contact-grid">
+        <div class="card"><div class="pad">
+          <form onsubmit="alert('메일 앱에서 보내주세요: 6605suk@naver.com'); return false;">
+            <label>성함</label>
+            <input placeholder="성함을 입력하세요">
+            <label style="margin-top:8px; display:block">이메일</label>
+            <input placeholder="이메일을 입력하세요">
+            <label style="margin-top:8px; display:block">연락처</label>
+            <input placeholder="연락처를 입력하세요">
+            <label style="margin-top:8px; display:block">메시지</label>
+            <textarea placeholder="문의 내용을 작성하세요"></textarea>
+            <div style="margin-top:10px">
+              <button class="btn primary" type="submit">문의 메일 보내기 안내</button>
+              <a class="btn" href="mailto:6605suk@naver.com" style="margin-left:6px">메일 앱 열기</a>
+            </div>
+            <p class="small muted" style="margin-top:6px">※ 실제 전송 기능이 필요하면 추후 간단 연동 가능(Formspree 등)</p>
+          </form>
+        </div></div>
+        <div class="card"><div class="pad">
+          <b>르빗 주식회사 (LEBIT Corp.)</b><br>
+          ☎ +82-10-4230-3532<br>
+          ✉ 6605suk@naver.com<br>
+          본사: 경기도 시흥시 매화로 97, 4층 401호 (제일빌딩)<br>
+          지사: 경기도 광주시 퇴촌면 정영로 956<br>
+          <div class="small muted" style="margin-top:6px">* 위 정보는 파일에서 직접 수정 가능합니다.</div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap footer">
+    © <span id="y"></span> LEBIT Corp. All rights reserved.
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
